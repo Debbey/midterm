@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Enrollee Information CRUD</title>
+</head>
+<body>
+    <center>
+  <h1>Enrollee Information CRUD</h1>
+  <form id="enrolleeForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required><br>
+
+    <label for="middleName">Middle Name:</label>
+    <input type="text" id="middleName"><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" required><br>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" required><br>
+
+    <label for="schoolYear">School Year:</label>
+    <input type="text" id="schoolYear" required><br>
+
+    <form id="enrolleeForm">
+        <input type="submit" value="Add Enrollee" id="submitButton">
+  </form>
+
+  <input type="text" id="listSearchInput" placeholder="Search in the list" oninput="searchInList()">
+
+
+  <table>
+    
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Birthday</th>
+        <th>Course</th>
+        <th>School Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="enrolleeList"></tbody>
+  </table>
+</center>
+
+  <script src="script.js"></script>
+</body>
+</html>
